@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  background-color: #242333;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seats{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seat{
+  background-color: grey;
+  width: 20px;
+  height: 15px;
+  border-radius: 20px 20px 0 0;
+}
+.seat:hover{
+  cursor: pointer;
+  transform: scale(115%);
+  box-shadow: 0px 0px 1px white;
+}
+
+.seat.ocupped, .seat_reference.ocupped{
+  background-color: white;
+}
+.seat.ocupped:hover{
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.seat.reserved, .seat_reference.reserved{
+  background-color: #6feaf6;
+}
+.row{
+  display: flex;
+  margin-top: 15px;
+  gap: 30px;
+}
+.column{
+  display: flex;
+  gap: 5px;
+}
+
+.cinema{
+  perspective: 1000px;
+  text-align: center;
+  
+}
+.screen{
+  background-color: white;
+  border: 1px solid transparent;
+  width: 300px;
+  height: 75px;
+  margin: 0 auto;
+  transform: rotateX(-50deg);
+  box-shadow: 0px 0px 10px white;
+  margin-bottom: 25px;
+}
+
+.img-size{
+  width: 299px;
+  height: 75px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.resume{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+
+}
+.tickets{
+  color: #6feaf6;
+}
+
+.movies_selector{
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.movies_selector select{
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin: 10px;
+}
+
+.reference{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.reference li{
+  display: inline;
+  margin-right: 15px;
+}
+.seat_reference{
+  background-color: grey;
+  width: 20px;
+  height: 15px;
+  border-radius: 20px 20px 0 0;
+}
+.reference li span{
+  display: inline-block;
+  margin-right: 8px;
+}
+.button{
+  border-radius: 6px;
+  padding: 3px 10px;
+  font-size: medium;
+  margin-top: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+

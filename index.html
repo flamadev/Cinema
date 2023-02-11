@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <title>Cinema</title>
+</head>
+
+<body>
+  <div class="cinema paradiso">
+    <form class="movies_selector">
+      <label for="movies">Pick a movie</label>
+      <select name="movies" id="movies">
+
+      </select>
+    </form>
+    <ul class="reference">
+      <li><span class="seat_reference"></span>Available</li>
+      <li><span class="seat_reference reserved"></span>Reserved</li>
+      <li><span class="seat_reference ocupped"></span>Occupied</li>
+    </ul>
+    <div id='screen' class="screen">
+      <img class="img-size" src="./img/Joker.jpg" />
+
+
+    </div>
+    <div class="seats">
+    </div>
+    <p class="resume">You have selected <span id="selectedSeats" class="tickets">0</span> for a price of
+      $<span id="price" class="tickets">0</span> </p>
+    <button class="button reset">Reset</button>
+    <button class="button confirm">Confirm</button>
+
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
